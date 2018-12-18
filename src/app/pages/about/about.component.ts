@@ -14,7 +14,10 @@ export class AboutComponent implements OnInit {
   constructor( public infoService: InfoPaginaService ) { }
 
   ngOnInit() {
-    fbq('track', 'AboutPage');
+    fbq('track', 'CompleteRegistration');
+    console.log('==============================');
+    console.log('Ingresando al About Page con el evento CompleteRegistration. Para simular la finalizacion de un registro.');
+    console.log('==============================');
   }
 
 }

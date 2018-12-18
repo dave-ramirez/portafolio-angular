@@ -13,7 +13,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    fbq('track', 'HomePage');
+    fbq('track', 'PageView');
+    console.log('==============================');
+    console.log('Ingresando al Home Page con el evento PageView.');
+    console.log('==============================');
   }
 
 }
